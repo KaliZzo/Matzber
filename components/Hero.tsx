@@ -69,19 +69,7 @@ const Hero: React.FC = () => {
              <div className="relative w-full max-w-lg aspect-square lg:aspect-[4/3] bg-slate-800/50 rounded-3xl border border-slate-700 p-8 flex flex-col items-center justify-center text-center shadow-2xl">
                 {/* Visual Representation of Battery Service */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-yellow-500/5 rounded-3xl"></div>
-                {/* Prefer a bundled asset (src/assets/battery.png) when present — otherwise fall back to public/battery.png */}
-                {
-                  (() => {
-                    // Use Vite's import.meta.glob to check for a bundled image at build time.
-                    // If the file isn't present in the repository this will still work — we fall back to /battery.png
-                    const assets = import.meta.glob('../assets/battery.png', { eager: true, as: 'url' }) as Record<string, string | undefined>;
-                    const bundled = assets['../assets/battery.png'];
-                    const src = bundled ?? '/battery.png';
-                    return (
-                      <img src={src} alt="מצבר" className="w-40 h-40 lg:w-64 lg:h-64 mb-6 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)] object-contain" />
-                    );
-                  })()
-                }
+                <img src="/battery.png" alt="מצבר" className="w-40 h-40 lg:w-64 lg:h-64 mb-6 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)] object-contain" />
                 <h3 className="text-2xl font-bold text-white mb-2">מצברי שנפ איכותיים</h3>
                 <p className="text-slate-400 mb-6">מותאם לאקלים הישראלי, עמידות גבוהה</p>
                 
