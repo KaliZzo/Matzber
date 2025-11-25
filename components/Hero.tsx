@@ -32,14 +32,14 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <a 
-                href="tel:*" 
+                href="tel:+972533966768" 
                 className="flex items-center justify-center gap-3 bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-yellow-500/20 hover:scale-105"
               >
                 <Phone className="w-6 h-6" />
                 <span>שיחה בטלפון</span>
               </a>
               <a 
-                href="https://wa.me/*" 
+                href="https://wa.me/972533966768" 
                 className="flex items-center justify-center gap-3 bg-slate-700 hover:bg-slate-600 text-white font-bold py-4 px-8 rounded-xl transition-all border border-slate-600 hover:border-slate-500"
               >
                 <MessageCircle className="w-6 h-6 text-green-400" />
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
              <div className="relative w-full max-w-lg aspect-square lg:aspect-[4/3] bg-slate-800/50 rounded-3xl border border-slate-700 p-8 flex flex-col items-center justify-center text-center shadow-2xl">
                 {/* Visual Representation of Battery Service */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-yellow-500/5 rounded-3xl"></div>
-                <BatteryCharging className="w-32 h-32 text-yellow-500 mb-6 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]" />
+                <img src="/battery.png" alt="מצבר" className="w-40 h-40 lg:w-64 lg:h-64 mb-6 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)] object-contain" />
                 <h3 className="text-2xl font-bold text-white mb-2">מצברי שנפ איכותיים</h3>
                 <p className="text-slate-400 mb-6">מותאם לאקלים הישראלי, עמידות גבוהה</p>
                 
