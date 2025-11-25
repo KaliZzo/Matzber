@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MessageCircle, Clock, BatteryCharging, ShieldCheck, MapPin } from 'lucide-react';
+import batteryImg from '../assets/battery.png';
 
 const Hero: React.FC = () => {
   return (
@@ -69,7 +70,7 @@ const Hero: React.FC = () => {
              <div className="relative w-full max-w-lg aspect-square lg:aspect-[4/3] bg-slate-800/50 rounded-3xl border border-slate-700 p-8 flex flex-col items-center justify-center text-center shadow-2xl">
                 {/* Visual Representation of Battery Service */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-yellow-500/5 rounded-3xl"></div>
-                <img src="/battery.png" alt="מצבר" className="w-40 h-40 lg:w-64 lg:h-64 mb-6 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)] object-contain" />
+                <img src={batteryImg} alt="מצבר" className="w-40 h-40 lg:w-64 lg:h-64 mb-6 drop-shadow-[0_0_15px_rgba(234,179,8,0.5)] object-contain" />
                 <h3 className="text-2xl font-bold text-white mb-2">מצברי שנפ איכותיים</h3>
                 <p className="text-slate-400 mb-6">מותאם לאקלים הישראלי, עמידות גבוהה</p>
                 
